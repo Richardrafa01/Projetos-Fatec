@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaração INSS</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+<body>
+     <form class="formulario" id="formulario" >
+        <h2>Holerite Digital 2026</h2>
+
+         <label for="salario">Salario Bruto R$</label>
+         <input type="number" id="salarioBruto" placeholder="R$ 6500" required title="Digite seu salario">
+
+         <label for="desconto">Desconto INSS (Tabela 2026)</label>
+         <input type="number" id="inss"  placeholder="INSS - Calculo automatico" readonly>
+
+         <label for="desconto">Imposto de Renda (Insencao até 5K)</label>
+        <input type="number" id="irrf"  placeholder="IRRF - Calculo automatico" readonly>
+
+         <button type="button" id = "botaoCalcular">Calcular</button>
+        <button type="button" id="botaoLimpar" class="limpar">Limpar</button>
+        
+        <div id="resultado" style="display: none;"></div>
+
+        </form>
+
+    
+    <script src="JS/script.js"></script>
+
+</body>
+</html>
